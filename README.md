@@ -69,3 +69,12 @@ The company may:
 - SciPy (statistical testing)
 
 ---
+
+## ⚠️ Limitations
+
+- The analysis does not control for time-related factors (seasonality).
+- Trip purpose is unknown (business vs personal).
+- Distance alone may not fully explain class choice.
+- The dataset structure may not represent the full population of users.
+
+---

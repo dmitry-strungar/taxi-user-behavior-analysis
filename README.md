@@ -1,6 +1,6 @@
 # Taxi User Behavior Analysis
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes user behavior in a taxi service platform, focusing on trip distance preferences across different service classes.
 
@@ -8,20 +8,20 @@ The goal is to investigate whether users tend to choose Comfort class over Econo
 
 ---
 
-## 🎯 Business Question
+## Business Question
 
 Do users prefer Comfort class instead of Economy for long-distance trips?
 
 ---
 
-## 🔬 Hypothesis
+## Hypothesis
 
 - **H0 (Null Hypothesis):** There is no difference in trip distance distributions between Economy and Comfort classes.
 - **H1 (Alternative Hypothesis):** Comfort trips tend to have longer distances than Economy trips.
 
 ---
 
-## 📊 Methodology
+## Methodology
 
 1. Exploratory Data Analysis (EDA)
    - Dataset structure inspection
@@ -40,7 +40,7 @@ Do users prefer Comfort class instead of Economy for long-distance trips?
 
 ---
 
-## 📈 Key Findings
+## Key Findings
 
 - Distance distributions are not normally distributed.
 - Comfort trips show a higher concentration of longer distances.
@@ -49,7 +49,7 @@ Do users prefer Comfort class instead of Economy for long-distance trips?
 
 ---
 
-## 💼 Business Implication
+## Business Implication
 
 Users are more likely to choose Comfort class for longer trips.
 
@@ -60,7 +60,7 @@ The company may:
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 
 - Python
 - Pandas
@@ -70,7 +70,7 @@ The company may:
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - The analysis does not control for time-related factors (seasonality).
 - Trip purpose is unknown (business vs personal).

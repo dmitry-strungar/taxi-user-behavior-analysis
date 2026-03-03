@@ -1,80 +1,79 @@
-# Taxi User Behavior Analysis
+# Анализ поведения пользователей сервиса такси
 
-## Project Overview
+## Обзор проекта
 
-This project analyzes user behavior in a taxi service platform, focusing on trip distance preferences across different service classes.
+Данный проект анализирует поведение пользователей на платформе сервиса такси, с фокусом на предпочтениях по дистанции поездки в разных классах обслуживания.
 
-The goal is to investigate whether users tend to choose Comfort class over Economy for longer trips.
-
----
-
-## Business Question
-
-Do users prefer Comfort class instead of Economy for long-distance trips?
+Цель — исследовать, выбирают ли пользователи класс Comfort вместо Economy для поездок на большие расстояния.
 
 ---
 
-## Hypothesis
+## Бизнес-вопрос
 
-- **H0 (Null Hypothesis):** There is no difference in trip distance distributions between Economy and Comfort classes.
-- **H1 (Alternative Hypothesis):** Comfort trips tend to have longer distances than Economy trips.
+Предпочитают ли пользователи класс Comfort вместо Economy для дальних поездок?
 
 ---
 
-## Methodology
+## Гипотеза
 
-1. Exploratory Data Analysis (EDA)
-   - Dataset structure inspection
-   - Descriptive statistics
-   - Class distribution analysis
+- **H0 (Нулевая гипотеза):** Различий в распределении дистанций поездок между классами Economy и Comfort нет.
+- **H1 (Альтернативная гипотеза):** Поездки класса Comfort имеют большую дистанцию по сравнению с Economy.
 
-2. Distribution Visualization
+---
+
+## Методология
+
+1. Разведочный анализ данных (EDA)
+   - Анализ структуры набора данных
+   - Описательная статистика
+   - Анализ распределения по классам
+
+2. Визуализация распределений
    - Kernel Density Estimation (KDE)
-   - Boxplot comparison
+   - Сравнение boxplot
 
-3. Normality Testing
-   - Shapiro–Wilk test (sampling approach)
+3. Проверка нормальности
+   - Тест Шапиро–Уилка (с использованием выборочного подхода)
 
-4. Statistical Testing
-   - Mann–Whitney U test (non-parametric)
-
----
-
-## Key Findings
-
-- Distance distributions are not normally distributed.
-- Comfort trips show a higher concentration of longer distances.
-- Mann–Whitney U test indicates statistically significant difference (p < 0.05).
-- Trip distance is associated with taxi class choice.
+4. Статистическое тестирование
+   - Тест Манна–Уитни (непараметрический)
 
 ---
 
-## Business Implication
+## Ключевые результаты
 
-Users are more likely to choose Comfort class for longer trips.
-
-The company may:
-- Promote Comfort class for long-distance routes
-- Optimize pricing strategy for extended trips
-- Personalize recommendations based on trip distance patterns
+- Распределения дистанций не являются нормальными.
+- Поездки класса Comfort демонстрируют более высокую концентрацию больших дистанций.
+- Тест Манна–Уитни показывает статистически значимое различие (p < 0.05).
+- Дистанция поездки связана с выбором класса такси.
 
 ---
 
-## Tools Used
+## Бизнес-вывод
+
+Пользователи чаще выбирают класс Comfort для дальних поездок.
+
+Компания может:
+
+- Продвигать класс Comfort для маршрутов на большие расстояния
+- Оптимизировать ценовую стратегию для длительных поездок
+- Персонализировать рекомендации на основе паттернов дистанции поездок
+
+---
+
+## Используемые инструменты
 
 - Python
 - Pandas
 - NumPy
 - Seaborn / Matplotlib
-- SciPy (statistical testing)
+- SciPy (статистическое тестирование)
 
 ---
 
-## Limitations
+## Ограничения
 
-- The analysis does not control for time-related factors (seasonality).
-- Trip purpose is unknown (business vs personal).
-- Distance alone may not fully explain class choice.
-- The dataset structure may not represent the full population of users.
-
----
+- В анализе не учитываются временные факторы (сезонность).
+- Цель поездки неизвестна (бизнес или личная).
+- Одна лишь дистанция может не полностью объяснять выбор класса.
+- Структура набора данных может не отражать всю совокупность пользователей.

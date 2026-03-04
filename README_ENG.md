@@ -40,12 +40,87 @@ Do users prefer Comfort class instead of Economy for long-distance trips?
 
 ---
 
-## Key Findings
+## Key Insights
 
-- Distance distributions are not normally distributed.
-- Comfort trips show a higher concentration of longer distances.
-- Mann–Whitney U test indicates statistically significant difference (p < 0.05).
-- Trip distance is associated with taxi class choice.
+### Distribution Analysis
+
+Distance distributions for Economy and Comfort trips are right-skewed and non-normal.  
+This justifies the use of a non-parametric statistical test (Mann–Whitney U test).
+
+
+### Median Comparison
+
+- Economy median distance: **23.80 km**
+- Comfort median distance: **28.08 km**
+- Absolute difference: **+4.28 km**
+- Relative increase: **+17.98%**
+
+A typical Comfort trip is nearly 18% longer than a typical Economy trip.
+
+
+### Mean Comparison
+
+- Economy mean distance: **26.28 km**
+- Comfort mean distance: **29.76 km**
+- Mean difference: **+3.48 km**
+- Relative mean increase: **+13.22%**
+
+The shift is consistent across both medians and means, indicating a stable structural difference.
+
+
+### Mann–Whitney U Test Results
+
+- U-statistic: **139702**
+- p-value: **0.000642**
+
+Since p-value < 0.05, the null hypothesis is rejected.
+
+Comfort distance distribution is statistically significantly shifted to the right compared to Economy.
+
+
+### Effect Size (Probability of Superiority)
+
+Probability that a randomly selected Comfort trip is longer than a randomly selected Economy trip:
+
+**0.559**
+
+This means that in **55.9% of cases**, a Comfort trip is longer than an Economy trip.
+
+This represents a real behavioral shift, not merely statistical significance.
+
+
+### Robustness Check
+
+After removing the top 1% of extreme distances:
+
+- p-value: **0.000521**
+- Probability of Superiority: **0.560**
+
+The effect remains statistically significant and practically unchanged.
+
+This confirms that the observed difference is not driven by extreme long-distance outliers.
+
+
+## Behavioral Interpretation
+
+1. Users systematically select Comfort for longer trips.
+2. A 4.28 km median difference represents economically meaningful segmentation.
+3. Probability of superiority above 0.5 confirms a genuine distribution shift.
+4. The effect remains stable after trimming extreme values.
+
+
+## Implications
+
+The findings suggest:
+
+- Trip distance is a statistically significant determinant of taxi class choice.
+- Price sensitivity decreases as trip distance increases.
+- Comfort can be strategically promoted for longer routes.
+- Distance can serve as a predictive feature in class selection models.
+- Dynamic upselling of Comfort for trips above Economy median distance may increase revenue.
+
+The study identifies a statistically significant behavioral pattern.  
+However, it remains observational and does not establish causality.
 
 ---
 

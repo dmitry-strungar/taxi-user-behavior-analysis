@@ -123,6 +123,19 @@ The study identifies a statistically significant behavioral pattern.
 However, it remains observational and does not establish causality.
 
 ---
+## Business Value
+Identifies behavioral differences between Economy and Comfort segments  
+Confirms statistical significance of distance differences  
+Supports pricing and service positioning strategy  
+Helps optimize segmentation and product offering  
+
+## Stakeholders
+Product Team  
+Pricing Analysts  
+Marketing Team  
+Data Analysts  
+
+---
 
 ## Business Implication
 

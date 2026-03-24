@@ -45,7 +45,7 @@ Do users prefer Comfort class instead of Economy for long-distance trips?
 ### Distribution Analysis
 
 Distance distributions for Economy and Comfort trips are right-skewed and non-normal.  
-This justifies the use of a non-parametric statistical test (Mann–Whitney U test).
+This justifies the use of a non-parametric statistical test (Mann-Whitney U test).
 
 
 ### Median Comparison
@@ -165,4 +165,3 @@ The company may:
 - Distance alone may not fully explain class choice.
 - The dataset structure may not represent the full population of users.
 
----
